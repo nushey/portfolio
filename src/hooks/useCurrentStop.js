@@ -25,6 +25,13 @@ export function useCurrentStop(ids) {
         if (!el) continue
         if (el.getBoundingClientRect().top - REFERENCE_LINE <= 1) current = i
       }
+      // The last stop sits near the page bottom with little content below it, so it
+      // can never be scrolled up to the reference line. Treat reaching the bottom of
+      // the page as landing on the final stop.
+      const atBottom =
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 2
+      if (atBottom) current = ids.length - 1
       setIndex(current)
     }
 

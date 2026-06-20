@@ -4,10 +4,12 @@
 // from the public simple-icons project (single-color 24×24 paths) so no icon
 // dependency is added. Icons are dim/desaturated by default and bloom to their
 // brand color with a soft glow on hover. SQL and "AI Agents" have no official logo,
-// so they use a neutral mono glyph. The track is duplicated and translated -50%
-// for a seamless loop, gated behind `motion-safe:` (static under reduced motion).
+// so they use representative line (stroke) icons. The track is duplicated and
+// translated -50% for a seamless loop, gated behind `motion-safe:` (static under
+// reduced motion).
 
-// brand: simple-icons hex. icon: 24×24 single-path glyph, or a text glyph fallback.
+// brand: hex driving color + glow. path: 24×24 filled brand glyph; icon: 24×24
+// stroke line glyph (for entries with no official brand logo).
 const STACK = [
   {
     name: '.NET',
@@ -41,27 +43,57 @@ const STACK = [
   },
   {
     name: 'Apache Kafka',
-    brand: '#231F20',
+    brand: '#FFFFFF',
     path: 'M9.224 9.842a2.114 2.114 0 0 0-1.85 1.095l-1.339-.762a3.65 3.65 0 0 0 .002-1.74l1.337-.766a2.116 2.116 0 1 0-.526-1.39c0 .118.011.235.03.35l-1.34.768a3.659 3.659 0 0 0-2.193-1.063V3.187a2.116 2.116 0 1 0-1.51 0V6.36A3.673 3.673 0 0 0 .96 9.997a3.673 3.673 0 0 0 2.611 3.638v3.189a2.115 2.115 0 1 0 1.51 0v-3.193a3.661 3.661 0 0 0 2.193-1.06l1.34.768a2.131 2.131 0 0 0-.03.35 2.116 2.116 0 1 0 .64-1.515 2.114 2.114 0 0 0-.65-.32zm.018-5.871a.927.927 0 1 1 .002 1.854.927.927 0 0 1-.002-1.854zm0 12.011a.927.927 0 1 1-.002 1.853.927.927 0 0 1 .002-1.853zM2.844 2.116a.927.927 0 1 1 1.854 0 .927.927 0 0 1-1.854 0zm1.854 19.768a.927.927 0 1 1-1.854 0 .927.927 0 0 1 1.854 0zm-.927-9.387a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z',
   },
-  { name: 'SQL', brand: '#A1A1AA', glyph: true },
-  { name: 'AI Agents', brand: '#A1A1AA', glyph: true },
+  {
+    name: 'SQL',
+    brand: '#A1A1AA',
+    icon: (
+      <>
+        <ellipse cx="12" cy="6" rx="7.5" ry="3" />
+        <path d="M4.5 6v6c0 1.66 3.36 3 7.5 3s7.5-1.34 7.5-3V6" />
+        <path d="M4.5 12v6c0 1.66 3.36 3 7.5 3s7.5-1.34 7.5-3v-6" />
+      </>
+    ),
+  },
+  {
+    name: 'AI Agents',
+    brand: '#A1A1AA',
+    icon: (
+      <>
+        <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+        <path d="M20 3v4" />
+        <path d="M22 5h-4" />
+        <path d="M4 17v2" />
+        <path d="M6 18H2" />
+      </>
+    ),
+  },
 ]
 
-// One brand glyph: either an inline SVG path or a neutral mono text glyph. The CSS
-// variable `--brand` carries the brand hex; default state is dim/desaturated and
-// hover restores full color plus a soft drop-shadow glow in the brand color.
+// One stack glyph. The CSS variable `--brand` carries the brand hex; default state
+// is dim/desaturated and hover restores full color plus a soft drop-shadow glow in
+// the brand color. Brand logos use a single filled `path`; SQL / AI Agents (no
+// official logo) use representative stroke `icon` line glyphs instead.
 function BrandIcon({ item }) {
   const common =
     'flex h-9 w-9 items-center justify-center text-zinc-400 opacity-60 grayscale transition duration-300 group-hover/icon:opacity-100 group-hover/icon:grayscale-0'
 
-  if (item.glyph) {
+  if (item.icon) {
     return (
-      <span
-        className={`${common} rounded-md border border-white/10 bg-white/5 font-mono text-[10px] font-bold leading-none text-zinc-300 group-hover/icon:border-white/20 group-hover/icon:text-zinc-100`}
+      <svg
+        viewBox="0 0 24 24"
+        className={common}
+        style={{ color: item.brand }}
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
-        {item.name === 'AI Agents' ? 'AI' : 'SQL'}
-      </span>
+        {item.icon}
+      </svg>
     )
   }
 
