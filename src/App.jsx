@@ -5,6 +5,7 @@ import Experience from './components/Experience.jsx'
 import Projects from './components/Projects.jsx'
 import Contact from './components/Contact.jsx'
 import { usePointerGlow } from './hooks/usePointerGlow.js'
+import { useHashArrival } from './hooks/useHashArrival.js'
 
 // Composition root. Renders the fixed Navbar, then the page sections in order.
 // `Projects` wraps the projects header, in-section quick-nav, and the three
@@ -22,6 +23,7 @@ import { usePointerGlow } from './hooks/usePointerGlow.js'
 // jumps are additionally handled by the global `section { scroll-margin-top }`).
 export default function App() {
   const glowRef = usePointerGlow()
+  useHashArrival()
 
   return (
     <div className="relative min-h-dvh bg-zinc-950 text-zinc-100">

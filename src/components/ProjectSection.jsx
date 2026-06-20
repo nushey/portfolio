@@ -41,10 +41,10 @@ export default function ProjectSection({ project }) {
       aria-labelledby={headingId}
       className="mx-auto w-full max-w-5xl px-6 py-12 sm:py-16"
     >
-      <article className="rounded-3xl border border-zinc-200/70 bg-white/60 p-8 shadow-sm shadow-zinc-200/40 backdrop-blur-xl sm:p-10">
+      <article className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-[0_24px_60px_-24px_rgba(0,0,0,0.7)] backdrop-blur-xl transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1.5 hover:border-blue-400/40 hover:shadow-[0_0_40px_-8px_rgba(94,106,210,0.35)] sm:p-10">
         <h2
           id={headingId}
-          className="font-mono text-2xl font-semibold tracking-tight text-zinc-900 sm:text-3xl"
+          className="bg-gradient-to-br from-white to-white/60 bg-clip-text font-mono text-2xl font-semibold tracking-tight text-transparent sm:text-3xl"
         >
           {t(`nav.${translationKey}`)}
         </h2>
@@ -52,10 +52,10 @@ export default function ProjectSection({ project }) {
         <dl className="mt-8 space-y-6">
           {blocks.map(({ key, label, text }) => (
             <div key={key}>
-              <dt className="text-xs font-semibold uppercase tracking-widest text-blue-600">
+              <dt className="font-mono text-xs font-semibold uppercase tracking-widest text-blue-300">
                 {label}
               </dt>
-              <dd className="mt-1.5 text-base leading-relaxed text-zinc-600 sm:text-lg">{text}</dd>
+              <dd className="mt-1.5 text-base leading-relaxed text-zinc-300 sm:text-lg">{text}</dd>
             </div>
           ))}
         </dl>
@@ -64,7 +64,7 @@ export default function ProjectSection({ project }) {
           {tech.map((item) => (
             <li
               key={item}
-              className="rounded-full border border-zinc-200 bg-zinc-50/80 px-3 py-1 text-sm font-medium text-zinc-700"
+              className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-zinc-300 transition-colors duration-200 hover:border-blue-400/40 hover:bg-blue-500/10 hover:text-blue-200"
             >
               {item}
             </li>
@@ -78,7 +78,7 @@ export default function ProjectSection({ project }) {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-4 py-2 text-sm font-medium text-zinc-800 shadow-sm transition-colors duration-200 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-zinc-200 backdrop-blur-xl transition-colors duration-200 hover:border-blue-400/40 hover:bg-blue-500/10 hover:text-blue-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
             >
               {label}
               <ExternalLinkIcon />
