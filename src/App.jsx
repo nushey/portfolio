@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import Bio from './components/Bio.jsx'
+import Experience from './components/Experience.jsx'
 import ProjectSection from './components/ProjectSection.jsx'
 import Contact from './components/Contact.jsx'
 import { projects } from './data/projects.js'
@@ -24,6 +25,7 @@ export default function App() {
       <main className="pt-16">
         <Hero />
         <Bio />
+        <Experience />
         {projects.map((project) => (
           <ProjectSection key={project.id} project={project} />
         ))}

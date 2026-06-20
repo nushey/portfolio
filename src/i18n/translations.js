@@ -7,6 +7,7 @@ export const translations = {
     nav: {
       inicio: 'Inicio',
       bio: 'Bio',
+      experiencia: 'Experiencia',
       agentsMdGenerator: 'agents-md-generator',
       contextManager: 'context-manager',
       sddFlow: 'sdd-flow',
@@ -28,9 +29,39 @@ export const translations = {
     },
     bio: {
       profile:
-        'Perfil enfocado en rendimiento, optimización de flujos de trabajo y arquitectura. Mi rol docente en Diseño de Aplicaciones es una garantía de buenas prácticas, rigurosidad y calidad de código.',
+        'Estudiante de Ingeniería en Sistemas en la Universidad ORT (Montevideo), con un promedio de 91 y Beca de Excelencia Académica. Desarrollador full-stack con C#/.NET y EF Core, arquitecturas orientadas a eventos con Kafka y frameworks modernos de JavaScript. Trabajo en equipos Scrum aplicando SOLID/GRASP y patrones de diseño, con foco reciente en fundamentos de Machine Learning e IA Generativa. Mi rol docente en Diseño de Aplicaciones es una garantía de buenas prácticas, rigurosidad y calidad de código.',
       stackLabel: 'Stack',
-      stack: ['C++', 'C#', 'TypeScript', 'JavaScript', '.NET', 'Node.js', 'MCP', 'Zsh'],
+      stack: ['C#', '.NET', 'EF Core', 'React', 'Node.js', 'Kafka', 'Docker', 'PostgreSQL', 'MCP'],
+    },
+    experience: {
+      intro:
+        'Trayectoria profesional entre ingeniería de software a gran escala, desarrollo freelance y docencia universitaria.',
+      ukg: {
+        role: 'Pasantía de Ingeniería de Software',
+        bullets: [
+          'Contribuí al desarrollo backend y full-stack en un entorno de ingeniería a gran escala.',
+          'Diseñé y extendí micro-servicios orientados a eventos.',
+          'Construí métricas de consumer-lag de Kafka, integradas con Prometheus y Grafana; habilité el escalado horizontal con Kubernetes.',
+          'Trabajé con pipelines de CI/CD, integraciones de servicios, desarrollo de APIs y pruebas automatizadas.',
+          'Practiqué Scrum (dailies, planning, reviews, retros) y colaboré con ingenieros senior mediante code review y estándares de calidad.',
+        ],
+      },
+      maquilift: {
+        role: 'Ingeniero de Software Freelance',
+        bullets: [
+          'Construí un ERP de escritorio a medida en Electron/React que reemplazó un flujo legacy en Excel, resolviendo inconsistencias y previniendo pérdida crítica de datos.',
+          'Diseñé un backend centralizado en la nube con Node.js y Supabase (PostgreSQL), asegurando persistencia e integridad de los datos.',
+          'Implementé un pipeline de distribución con CI/CD y actualizaciones OTA vía GitHub Releases para que el equipo de operaciones siempre use la última versión.',
+        ],
+      },
+      ort: {
+        role: 'Profesor Adjunto de Diseño de Aplicaciones 1',
+        bullets: [
+          'Dicto el currículo práctico: .NET, C#, diseño orientado a objetos, clean code, SOLID, TDD, patrones de diseño, inyección de dependencias, GRASP y principios de arquitectura.',
+          'Preparo y dicto ejemplos, guío laboratorios, evalúo entregas y doy feedback técnico y conceptual.',
+          'Guío a los estudiantes en flujos de trabajo modernos: GitFlow, EF Core, Blazor, arquitectura en capas, refactoring y TDD.',
+        ],
+      },
     },
     project: {
       solutionLabel: 'Solución',
@@ -70,6 +101,7 @@ export const translations = {
     nav: {
       inicio: 'Home',
       bio: 'Bio',
+      experiencia: 'Experience',
       agentsMdGenerator: 'agents-md-generator',
       contextManager: 'context-manager',
       sddFlow: 'sdd-flow',
@@ -91,9 +123,39 @@ export const translations = {
     },
     bio: {
       profile:
-        'A profile focused on performance, workflow optimization and architecture. My teaching role in Software Design (Diseño de Aplicaciones) is a guarantee of best practices, rigor and code quality.',
+        'A Systems Engineering student at ORT University (Montevideo) with a 91 GPA and an Academic Excellence Scholarship. A full-stack developer working with C#/.NET and EF Core, event-driven architectures with Kafka and modern JavaScript frameworks. I work in Scrum teams applying SOLID/GRASP and design patterns, with a recent focus on Machine Learning and Generative AI fundamentals. My teaching role in Software Design (Diseño de Aplicaciones) is a guarantee of best practices, rigor and code quality.',
       stackLabel: 'Stack',
-      stack: ['C++', 'C#', 'TypeScript', 'JavaScript', '.NET', 'Node.js', 'MCP', 'Zsh'],
+      stack: ['C#', '.NET', 'EF Core', 'React', 'Node.js', 'Kafka', 'Docker', 'PostgreSQL', 'MCP'],
+    },
+    experience: {
+      intro:
+        'A professional journey spanning large-scale software engineering, freelance development and university teaching.',
+      ukg: {
+        role: 'Software Engineering Internship',
+        bullets: [
+          'Contributed to backend and full-stack development in a large-scale engineering environment.',
+          'Designed and extended event-driven micro-services.',
+          'Built Kafka consumer-lag metrics, integrated with Prometheus and Grafana; enabled horizontal scaling with Kubernetes.',
+          'Worked with CI/CD pipelines, service integrations, API development and automated testing.',
+          'Practiced Scrum (stand-ups, planning, reviews, retros) and collaborated with senior engineers through code review and quality standards.',
+        ],
+      },
+      maquilift: {
+        role: 'Freelance Software Engineer',
+        bullets: [
+          'Built a custom Electron/React desktop ERP that replaced a legacy Excel workflow, resolving data inconsistencies and preventing critical data loss.',
+          'Architected a centralized cloud backend with Node.js and Supabase (PostgreSQL), ensuring data persistence and integrity.',
+          'Engineered a distribution pipeline with CI/CD and OTA updates via GitHub Releases so the operations team always runs the latest version.',
+        ],
+      },
+      ort: {
+        role: 'Adjunct Professor of Applications Design 1',
+        bullets: [
+          'I teach the practical curriculum: .NET, C#, object-oriented design, clean code, SOLID, TDD, design patterns, dependency injection, GRASP and architecture principles.',
+          'I prepare and deliver examples, guide labs, evaluate assignments and provide technical and conceptual feedback.',
+          'I lead students through modern workflows: GitFlow, EF Core, Blazor, layered architecture, refactoring and TDD.',
+        ],
+      },
     },
     project: {
       solutionLabel: 'Solution',
