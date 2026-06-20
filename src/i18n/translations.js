@@ -23,6 +23,7 @@ export const translations = {
       close: 'Cerrar menú',
     },
     hero: {
+      kicker: '// 01. INICIO',
       title: 'Nahuel Zeballos',
       subtitle: 'Fullstack Developer & AI Engineer',
       tagline:
@@ -136,6 +137,7 @@ export const translations = {
       close: 'Close menu',
     },
     hero: {
+      kicker: '// 01. HOME',
       title: 'Nahuel Zeballos',
       subtitle: 'Fullstack Developer & AI Engineer',
       tagline:
