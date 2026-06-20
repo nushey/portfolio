@@ -29,7 +29,7 @@ export const translations = {
     },
     hero: {
       title: 'Nahuel Zeballos',
-      subtitle: 'Fullstack Developer & AI Engineer',
+      subtitle: 'Fullstack Developer & AI Practitioner',
       tagline:
         'Desarrollando infraestructura, servidores MCP y herramientas avanzadas de contexto para la era de la Inteligencia Artificial Agéntica.',
     },
@@ -55,7 +55,7 @@ export const translations = {
         ],
       ],
       stackLabel: 'Stack',
-      stack: ['C#', '.NET', 'EF Core', 'React', 'Node.js', 'Kafka', 'Docker', 'PostgreSQL', 'MCP'],
+      stack: ['C#', '.NET', 'EF Core', 'React', 'Node.js', 'Electron', 'Python', 'Kafka', 'Docker', 'PostgreSQL', 'SQL', 'MCP', 'AI Agents'],
     },
     experience: {
       kicker: 'Trayectoria',
@@ -165,7 +165,7 @@ export const translations = {
     },
     hero: {
       title: 'Nahuel Zeballos',
-      subtitle: 'Fullstack Developer & AI Engineer',
+      subtitle: 'Fullstack Developer & AI Practitioner',
       tagline:
         'Building infrastructure, MCP servers and advanced context tooling for the era of Agentic Artificial Intelligence.',
     },
@@ -191,7 +191,7 @@ export const translations = {
         ],
       ],
       stackLabel: 'Stack',
-      stack: ['C#', '.NET', 'EF Core', 'React', 'Node.js', 'Kafka', 'Docker', 'PostgreSQL', 'MCP'],
+      stack: ['C#', '.NET', 'EF Core', 'React', 'Node.js', 'Electron', 'Python', 'Kafka', 'Docker', 'PostgreSQL', 'SQL', 'MCP', 'AI Agents'],
     },
     experience: {
       kicker: 'Career',
