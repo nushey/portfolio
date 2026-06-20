@@ -87,7 +87,7 @@ function MarqueeTrack() {
           style={{ '--brand': `${item.brand}99` }}
         >
           <BrandIcon item={item} />
-          <span className="font-mono text-sm text-zinc-500 transition-colors duration-300 group-hover/icon:text-zinc-200">
+          <span className="font-mono text-sm text-zinc-400 transition-colors duration-300 group-hover/icon:text-zinc-200">
             {item.name}
           </span>
         </li>

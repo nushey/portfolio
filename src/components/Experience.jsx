@@ -62,7 +62,7 @@ function TimelineItem({ entry, index, isLast, t }) {
 
         <p className="mt-2 text-sm font-semibold uppercase tracking-widest text-blue-300">
           {company}
-          <span className="mx-2 text-zinc-600" aria-hidden="true">
+          <span className="mx-2 text-zinc-500" aria-hidden="true">
             ·
           </span>
           <span className="font-medium normal-case tracking-normal text-zinc-400">
