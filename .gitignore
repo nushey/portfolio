@@ -22,3 +22,6 @@ dist-ssr
 
 # Vercel
 .vercel
+
+# SDD artifacts (spec-driven development working files)
+.spec/
