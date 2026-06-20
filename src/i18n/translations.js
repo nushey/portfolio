@@ -15,6 +15,11 @@ export const translations = {
     languageToggle: {
       ariaLabel: 'Cambiar idioma',
     },
+    menu: {
+      primary: 'Navegación principal',
+      open: 'Abrir menú',
+      close: 'Cerrar menú',
+    },
     hero: {
       title: 'Nahuel Zeballos',
       subtitle: 'Junior Fullstack Developer & Docente de Diseño de Aplicaciones',
@@ -72,6 +77,11 @@ export const translations = {
     },
     languageToggle: {
       ariaLabel: 'Switch language',
+    },
+    menu: {
+      primary: 'Main navigation',
+      open: 'Open menu',
+      close: 'Close menu',
     },
     hero: {
       title: 'Nahuel Zeballos',
