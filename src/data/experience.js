@@ -7,6 +7,14 @@
 
 export const experience = [
   {
+    id: 'zureo',
+    translationKey: 'zureo',
+    company: 'Zureo Software',
+    location: 'Montevideo, Uruguay',
+    dateRange: 'Jan 2026 – Present',
+    tech: ['.NET Framework', 'AngularJS', 'SQL', 'REST APIs', 'Postman', 'Agentic AI'],
+  },
+  {
     id: 'ukg',
     translationKey: 'ukg',
     company: 'UKG',

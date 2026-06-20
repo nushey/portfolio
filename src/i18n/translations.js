@@ -24,7 +24,7 @@ export const translations = {
     },
     hero: {
       title: 'Nahuel Zeballos',
-      subtitle: 'Junior Fullstack Developer & Docente de Diseño de Aplicaciones',
+      subtitle: 'Fullstack Developer & AI Engineer',
       tagline:
         'Desarrollando infraestructura, servidores MCP y herramientas avanzadas de contexto para la era de la Inteligencia Artificial Agéntica.',
     },
@@ -39,6 +39,15 @@ export const translations = {
       title: 'Experiencia',
       intro:
         'Trayectoria profesional entre ingeniería de software a gran escala, desarrollo freelance y docencia universitaria.',
+      zureo: {
+        role: 'Desarrollador Fullstack Junior',
+        bullets: [
+          'Desarrollo nuevas soluciones y features e implemento fixes sobre un proyecto de gran escala que exige alto nivel de debugging e ingeniería inversa.',
+          'Construyo soluciones backend con .NET Framework y frontends con AngularJS.',
+          'Manejo APIs, escribo y optimizo consultas SQL, y pruebo endpoints con Postman.',
+          'Aplico IA agéntica integrada con herramientas propias para acelerar el desarrollo del día a día.',
+        ],
+      },
       ukg: {
         role: 'Pasantía de Ingeniería de Software',
         bullets: [
@@ -128,7 +137,7 @@ export const translations = {
     },
     hero: {
       title: 'Nahuel Zeballos',
-      subtitle: 'Junior Fullstack Developer & Software Design Lecturer',
+      subtitle: 'Fullstack Developer & AI Engineer',
       tagline:
         'Building infrastructure, MCP servers and advanced context tooling for the era of Agentic Artificial Intelligence.',
     },
@@ -143,6 +152,15 @@ export const translations = {
       title: 'Experience',
       intro:
         'A professional journey spanning large-scale software engineering, freelance development and university teaching.',
+      zureo: {
+        role: 'Junior Fullstack Developer',
+        bullets: [
+          'Develop new solutions and features and ship fixes across a large-scale project that demands strong debugging and reverse-engineering skills.',
+          'Build backend solutions with .NET Framework and AngularJS frontends.',
+          'Manage APIs, write and optimize SQL queries, and test endpoints with Postman.',
+          'Apply agentic AI integrated with my own custom tooling to speed up day-to-day development.',
+        ],
+      },
       ukg: {
         role: 'Software Engineering Internship',
         bullets: [
