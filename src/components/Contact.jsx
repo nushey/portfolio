@@ -75,15 +75,15 @@ export default function Contact() {
         aria-labelledby="contact-heading"
         className="mx-auto w-full max-w-5xl px-6 py-12 sm:py-16"
       >
-        <article className="rounded-3xl border border-zinc-200/70 bg-white/60 p-8 text-center shadow-sm shadow-zinc-200/40 backdrop-blur-xl sm:p-10">
+        <article className="rounded-3xl border border-white/10 bg-white/5 p-8 text-center shadow-[0_24px_60px_-24px_rgba(0,0,0,0.7)] backdrop-blur-xl transition-[transform,box-shadow,border-color] duration-300 hover:border-blue-400/40 hover:shadow-[0_0_40px_-8px_rgba(94,106,210,0.35)] sm:p-10">
           <h2
             id="contact-heading"
-            className="font-mono text-2xl font-semibold tracking-tight text-zinc-900 sm:text-3xl"
+            className="bg-gradient-to-br from-white to-white/60 bg-clip-text font-mono text-2xl font-semibold tracking-tight text-transparent sm:text-3xl"
           >
             {t('contact.heading')}
           </h2>
 
-          <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-zinc-600 sm:text-lg">
+          <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-zinc-300 sm:text-lg">
             {t('contact.intro')}
           </p>
 
@@ -93,7 +93,7 @@ export default function Contact() {
                 <a
                   href={href}
                   {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                  className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-4 py-2 text-sm font-medium text-zinc-800 shadow-sm transition-colors duration-200 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-zinc-200 backdrop-blur-xl transition-colors duration-200 hover:border-blue-400/40 hover:bg-blue-500/10 hover:text-blue-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
                 >
                   <Icon />
                   {label}
@@ -105,7 +105,7 @@ export default function Contact() {
       </section>
 
       <footer className="mx-auto w-full max-w-5xl px-6 py-10">
-        <div className="border-t border-zinc-200/70 pt-6 text-center text-sm text-zinc-500">
+        <div className="border-t border-white/10 pt-6 text-center text-sm text-zinc-400">
           <p>
             © {year} {t('hero.title')}. {t('footer.rights')}
           </p>

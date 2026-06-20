@@ -22,6 +22,11 @@ export const translations = {
       open: 'Abrir menú',
       close: 'Cerrar menú',
     },
+    sectionNav: {
+      label: 'Navegación por secciones',
+      previous: 'Sección anterior',
+      next: 'Sección siguiente',
+    },
     hero: {
       title: 'Nahuel Zeballos',
       subtitle: 'Fullstack Developer & AI Engineer',
@@ -29,8 +34,26 @@ export const translations = {
         'Desarrollando infraestructura, servidores MCP y herramientas avanzadas de contexto para la era de la Inteligencia Artificial Agéntica.',
     },
     bio: {
-      profile:
-        'Estudiante de Ingeniería en Sistemas en la Universidad ORT (Montevideo), con un promedio de 91 y Beca de Excelencia Académica. Desarrollador full-stack con C#/.NET y EF Core, arquitecturas orientadas a eventos con Kafka y frameworks modernos de JavaScript. Trabajo en equipos Scrum aplicando SOLID/GRASP y patrones de diseño, con foco reciente en fundamentos de Machine Learning e IA Generativa. Mi rol docente en Diseño de Aplicaciones es una garantía de buenas prácticas, rigurosidad y calidad de código.',
+      paragraphs: [
+        [
+          'Estudiante de Ingeniería en Sistemas con experiencia práctica en desarrollo full-stack, diseño de APIs, ',
+          { em: 'testing unitario' },
+          ' e ',
+          { em: 'integración continua' },
+          '. Manejo C#/.NET, EF Core, frameworks modernos de JavaScript, Docker, Vercel y ',
+          { em: 'arquitecturas orientadas a eventos' },
+          ' con Kafka.',
+        ],
+        [
+          'Trabajo en equipos Scrum aplicando principios de arquitectura (',
+          { em: 'SOLID, GRASP' },
+          '), con pensamiento analítico y resolución de problemas mediante ',
+          { em: 'patrones de diseño' },
+          '. Mi foco reciente está en fundamentos de Machine Learning e ',
+          { em: 'IA Generativa (GenAI)' },
+          '.',
+        ],
+      ],
       stackLabel: 'Stack',
       stack: ['C#', '.NET', 'EF Core', 'React', 'Node.js', 'Kafka', 'Docker', 'PostgreSQL', 'MCP'],
     },
@@ -135,6 +158,11 @@ export const translations = {
       open: 'Open menu',
       close: 'Close menu',
     },
+    sectionNav: {
+      label: 'Section navigation',
+      previous: 'Previous section',
+      next: 'Next section',
+    },
     hero: {
       title: 'Nahuel Zeballos',
       subtitle: 'Fullstack Developer & AI Engineer',
@@ -142,8 +170,26 @@ export const translations = {
         'Building infrastructure, MCP servers and advanced context tooling for the era of Agentic Artificial Intelligence.',
     },
     bio: {
-      profile:
-        'A Systems Engineering student at ORT University (Montevideo) with a 91 GPA and an Academic Excellence Scholarship. A full-stack developer working with C#/.NET and EF Core, event-driven architectures with Kafka and modern JavaScript frameworks. I work in Scrum teams applying SOLID/GRASP and design patterns, with a recent focus on Machine Learning and Generative AI fundamentals. My teaching role in Software Design (Diseño de Aplicaciones) is a guarantee of best practices, rigor and code quality.',
+      paragraphs: [
+        [
+          'Systems Engineering student with hands-on experience in full-stack development, API design, ',
+          { em: 'unit testing' },
+          ' and ',
+          { em: 'continuous integration' },
+          '. Skilled in C#/.NET, EF Core, modern JavaScript frameworks, Docker, Vercel and ',
+          { em: 'event-driven architectures' },
+          ' with Kafka.',
+        ],
+        [
+          'I work in Scrum teams applying architectural principles (',
+          { em: 'SOLID, GRASP' },
+          ') with strong analytical thinking and problem-solving through ',
+          { em: 'design patterns' },
+          '. My recent focus is on Machine Learning and ',
+          { em: 'Generative AI (GenAI)' },
+          ' fundamentals.',
+        ],
+      ],
       stackLabel: 'Stack',
       stack: ['C#', '.NET', 'EF Core', 'React', 'Node.js', 'Kafka', 'Docker', 'PostgreSQL', 'MCP'],
     },
