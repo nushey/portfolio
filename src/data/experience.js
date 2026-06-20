@@ -15,6 +15,14 @@ export const experience = [
     tech: ['.NET Framework', 'AngularJS', 'SQL', 'REST APIs', 'Postman', 'Agentic AI'],
   },
   {
+    id: 'ort',
+    translationKey: 'ort',
+    company: 'ORT University',
+    location: 'Montevideo, Uruguay',
+    dateRange: 'Mar 2025 – Present',
+    tech: ['.NET', 'C#', 'Blazor', 'EF Core', 'TDD', 'GitFlow'],
+  },
+  {
     id: 'ukg',
     translationKey: 'ukg',
     company: 'UKG',
@@ -29,13 +37,5 @@ export const experience = [
     location: 'Uruguay / Remote',
     dateRange: 'Mar 2024 – Aug 2025',
     tech: ['Electron', 'React', 'Node.js', 'Supabase', 'PostgreSQL', 'CI/CD'],
-  },
-  {
-    id: 'ort',
-    translationKey: 'ort',
-    company: 'ORT University',
-    location: 'Montevideo, Uruguay',
-    dateRange: 'Mar 2025 – Present',
-    tech: ['.NET', 'C#', 'Blazor', 'EF Core', 'TDD', 'GitFlow'],
   },
 ]
