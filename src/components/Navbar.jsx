@@ -8,9 +8,7 @@ const NAV_LINKS = [
   { href: '#inicio', labelKey: 'nav.inicio' },
   { href: '#bio', labelKey: 'nav.bio' },
   { href: '#experiencia', labelKey: 'nav.experiencia' },
-  { href: '#agents-md-generator', labelKey: 'nav.agentsMdGenerator' },
-  { href: '#context-manager', labelKey: 'nav.contextManager' },
-  { href: '#sdd-flow', labelKey: 'nav.sddFlow' },
+  { href: '#proyectos', labelKey: 'nav.proyectos' },
   { href: '#contacto', labelKey: 'nav.contacto' },
 ]
 

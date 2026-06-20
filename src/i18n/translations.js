@@ -8,6 +8,7 @@ export const translations = {
       inicio: 'Inicio',
       bio: 'Bio',
       experiencia: 'Experiencia',
+      proyectos: 'Proyectos',
       agentsMdGenerator: 'agents-md-generator',
       contextManager: 'context-manager',
       sddFlow: 'sdd-flow',
@@ -65,6 +66,13 @@ export const translations = {
         ],
       },
     },
+    projectsSection: {
+      kicker: 'Proyectos',
+      title: 'Lo que construyo',
+      intro:
+        'Infraestructura, servidores MCP y herramientas de contexto para agentes de IA. Tocá un proyecto para saltar a su detalle.',
+      quickNavLabel: 'Navegación de proyectos',
+    },
     project: {
       solutionLabel: 'Solución',
       problemLabel: 'Problema',
@@ -104,6 +112,7 @@ export const translations = {
       inicio: 'Home',
       bio: 'Bio',
       experiencia: 'Experience',
+      proyectos: 'Projects',
       agentsMdGenerator: 'agents-md-generator',
       contextManager: 'context-manager',
       sddFlow: 'sdd-flow',
@@ -160,6 +169,13 @@ export const translations = {
           'I lead students through modern workflows: GitFlow, EF Core, Blazor, layered architecture, refactoring and TDD.',
         ],
       },
+    },
+    projectsSection: {
+      kicker: 'Projects',
+      title: 'What I build',
+      intro:
+        'Infrastructure, MCP servers and context tooling for AI agents. Tap a project to jump to its details.',
+      quickNavLabel: 'Projects navigation',
     },
     project: {
       solutionLabel: 'Solution',

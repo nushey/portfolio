@@ -2,13 +2,12 @@ import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import Bio from './components/Bio.jsx'
 import Experience from './components/Experience.jsx'
-import ProjectSection from './components/ProjectSection.jsx'
+import Projects from './components/Projects.jsx'
 import Contact from './components/Contact.jsx'
-import { projects } from './data/projects.js'
 
 // Composition root. Renders the fixed Navbar, then the page sections in order.
-// The three project blocks are driven from the single `projects` data array
-// (never hardcoded). A decorative, fixed background wash gives the translucent
+// `Projects` wraps the projects header, in-section quick-nav, and the three
+// data-driven project blocks. A decorative, fixed background wash gives the translucent
 // glass cards something to read against; it is aria-hidden and purely visual.
 // `<main>` carries top padding so content clears the fixed h-16 navbar (anchored
 // jumps are additionally handled by the global `section { scroll-margin-top }`).
@@ -26,9 +25,7 @@ export default function App() {
         <Hero />
         <Bio />
         <Experience />
-        {projects.map((project) => (
-          <ProjectSection key={project.id} project={project} />
-        ))}
+        <Projects />
         <Contact />
       </main>
     </div>
