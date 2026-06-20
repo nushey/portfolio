@@ -34,6 +34,8 @@ export const translations = {
       stack: ['C#', '.NET', 'EF Core', 'React', 'Node.js', 'Kafka', 'Docker', 'PostgreSQL', 'MCP'],
     },
     experience: {
+      kicker: 'Trayectoria',
+      title: 'Experiencia',
       intro:
         'Trayectoria profesional entre ingeniería de software a gran escala, desarrollo freelance y docencia universitaria.',
       ukg: {
@@ -128,6 +130,8 @@ export const translations = {
       stack: ['C#', '.NET', 'EF Core', 'React', 'Node.js', 'Kafka', 'Docker', 'PostgreSQL', 'MCP'],
     },
     experience: {
+      kicker: 'Career',
+      title: 'Experience',
       intro:
         'A professional journey spanning large-scale software engineering, freelance development and university teaching.',
       ukg: {

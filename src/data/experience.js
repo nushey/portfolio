@@ -1,8 +1,9 @@
 // Single source of truth for the professional experience entries (most recent first).
 // Holds ONLY language-agnostic structural data: the `id`, the `company` and
-// `location` labels, the `dateRange`, the optional external `companyUrl`, and the
-// i18n key under `translations.experience.*` for the role title and bullet list.
-// Visible role copy is resolved by `Experience` through the translations dictionary.
+// `location` labels, the `dateRange`, the `tech` stack used in the role (shown as
+// pills), and the `translationKey` under `translations.experience.*` for the role
+// title and bullet list. Visible role copy is resolved by `Experience` through the
+// translations dictionary; tech names are proper nouns and stay untranslated.
 
 export const experience = [
   {
@@ -11,6 +12,7 @@ export const experience = [
     company: 'UKG',
     location: 'Montevideo, Uruguay',
     dateRange: 'Jun 2025 – Dec 2025',
+    tech: ['C#/.NET', 'Kafka', 'Kubernetes', 'Prometheus', 'Grafana', 'CI/CD'],
   },
   {
     id: 'maquilift',
@@ -18,6 +20,7 @@ export const experience = [
     company: 'Maquilift',
     location: 'Uruguay / Remote',
     dateRange: 'Mar 2024 – Aug 2025',
+    tech: ['Electron', 'React', 'Node.js', 'Supabase', 'PostgreSQL', 'CI/CD'],
   },
   {
     id: 'ort',
@@ -25,5 +28,6 @@ export const experience = [
     company: 'ORT University',
     location: 'Montevideo, Uruguay',
     dateRange: 'Mar 2025 – Present',
+    tech: ['.NET', 'C#', 'Blazor', 'EF Core', 'TDD', 'GitFlow'],
   },
 ]
