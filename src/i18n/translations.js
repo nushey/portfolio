@@ -22,8 +22,12 @@ export const translations = {
       open: 'Abrir menú',
       close: 'Cerrar menú',
     },
+    sectionNav: {
+      label: 'Navegación por secciones',
+      previous: 'Sección anterior',
+      next: 'Sección siguiente',
+    },
     hero: {
-      kicker: '// 01. INICIO',
       title: 'Nahuel Zeballos',
       subtitle: 'Fullstack Developer & AI Engineer',
       tagline:
@@ -154,8 +158,12 @@ export const translations = {
       open: 'Open menu',
       close: 'Close menu',
     },
+    sectionNav: {
+      label: 'Section navigation',
+      previous: 'Previous section',
+      next: 'Next section',
+    },
     hero: {
-      kicker: '// 01. HOME',
       title: 'Nahuel Zeballos',
       subtitle: 'Fullstack Developer & AI Engineer',
       tagline:

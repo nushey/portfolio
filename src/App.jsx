@@ -4,6 +4,7 @@ import Bio from './components/Bio.jsx'
 import Experience from './components/Experience.jsx'
 import Projects from './components/Projects.jsx'
 import Contact from './components/Contact.jsx'
+import SectionNav from './components/SectionNav.jsx'
 import { usePointerGlow } from './hooks/usePointerGlow.js'
 import { useHashArrival } from './hooks/useHashArrival.js'
 
@@ -50,6 +51,8 @@ export default function App() {
         <Projects />
         <Contact />
       </main>
+
+      <SectionNav />
     </div>
   )
 }

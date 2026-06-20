@@ -1,8 +1,8 @@
 import { useLanguage } from '../i18n/LanguageContext.jsx'
 
-// Landing section (`#inicio`). Dark, high-impact focal layout: a mono kicker, the
-// name set in a heavy gradient typeface revealed with a clip-path wipe over a soft
-// accent glow, then the role and tagline. All visible copy resolves through the
+// Landing section (`#inicio`). Dark, high-impact focal layout: a mono role subtitle,
+// the name set in a heavy gradient typeface revealed with a clip-path wipe over a soft
+// accent glow, then the tagline. All visible copy resolves through the
 // i18n `t` accessor. Every entrance is gated behind `motion-safe:` so the global
 // reduced-motion block leaves the content fully painted and static.
 export default function Hero() {
@@ -14,14 +14,6 @@ export default function Hero() {
       aria-labelledby="hero-title"
       className="relative mx-auto flex min-h-[88vh] w-full max-w-5xl flex-col items-center justify-center px-6 py-24 text-center"
     >
-      <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-500/10 px-3 py-1 font-mono text-xs font-semibold uppercase tracking-widest text-blue-300 motion-safe:animate-fade-in">
-        <span
-          aria-hidden="true"
-          className="h-1.5 w-1.5 rounded-full bg-blue-400 shadow-[0_0_10px_rgba(96,165,250,0.8)]"
-        />
-        {t('hero.kicker')}
-      </p>
-
       <p className="mb-6 font-mono text-sm font-medium uppercase tracking-[0.2em] text-blue-300 motion-safe:animate-fade-in">
         {t('hero.subtitle')}
       </p>

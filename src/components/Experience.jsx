@@ -46,8 +46,9 @@ function TimelineItem({ entry, index, isLast, t }) {
       </span>
 
       <article
+        id={`exp-${entry.id}`}
         style={{ transitionDelay: isVisible ? `${index * 90}ms` : '0ms' }}
-        className={`group rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_24px_60px_-24px_rgba(0,0,0,0.7)] backdrop-blur-xl transition-[transform,box-shadow,border-color,opacity] duration-300 ease-out hover:-translate-y-1.5 hover:border-blue-400/40 hover:shadow-[0_0_40px_-8px_rgba(94,106,210,0.35)] sm:p-8 motion-safe:duration-500 ${
+        className={`group scroll-mt-24 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_24px_60px_-24px_rgba(0,0,0,0.7)] backdrop-blur-xl transition-[transform,box-shadow,border-color,opacity] duration-300 ease-out hover:-translate-y-1.5 hover:border-blue-400/40 hover:shadow-[0_0_40px_-8px_rgba(94,106,210,0.35)] sm:p-8 motion-safe:duration-500 ${
           isVisible
             ? 'opacity-100 translate-y-0'
             : 'opacity-0 motion-safe:translate-y-6'

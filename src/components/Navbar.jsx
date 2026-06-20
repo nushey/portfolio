@@ -1,19 +1,16 @@
 import { useState } from 'react'
 import { useLanguage } from '../i18n/LanguageContext.jsx'
 import { useActiveSection } from '../hooks/useActiveSection.js'
+import { sections } from '../data/sections.js'
 
 // Fixed top navigation, dark glass (h-16 preserved). Anchor links smooth-scroll to
 // each section (smooth scroll and scroll-margin are handled globally in index.css,
 // guarded for reduced motion). The active section is tracked by `useActiveSection`
 // and reflected as a glowing, mono-bold link with `aria-current`. Language is a
 // sliding-pill segmented control. All visible labels resolve through the i18n `t`.
-const NAV_LINKS = [
-  { id: 'inicio', labelKey: 'nav.inicio' },
-  { id: 'bio', labelKey: 'nav.bio' },
-  { id: 'experiencia', labelKey: 'nav.experiencia' },
-  { id: 'proyectos', labelKey: 'nav.proyectos' },
-  { id: 'contacto', labelKey: 'nav.contacto' },
-]
+// The link list and its order come from the shared `sections` data (single source
+// of truth, also consumed by SectionNav).
+const NAV_LINKS = sections
 
 const SECTION_IDS = NAV_LINKS.map((link) => link.id)
 
